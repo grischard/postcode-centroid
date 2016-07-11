@@ -1,11 +1,23 @@
 #!/usr/bin/env python
 
 """
-GeoJSON centroids for each postcode in Luxembourg
+Return GeoJSON centroids for each postcode in Luxembourg
 
 - Downloads the latest geojson from UDATA_ADDRESSES
 - Average the position of all postcodes
 - Spit out geojson
+
+Run like :
+
+python3 postcode-centroid.py > centroids.geojson
+
+A sample centroids.geojson.xz (from 2016-07-11) is included.
+
+There are 63 postcodes in Luxembourg that contain only one
+address. Some of these are for residential addresses. You
+might want to consider merging these points with the nearest
+neighbour if you need to anonymise the output data of
+your project.
 """
 
 import requests
