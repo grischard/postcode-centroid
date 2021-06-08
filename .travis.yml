@@ -1,0 +1,12 @@
+language: python
+sudo: required
+python:
+  - "3.8"
+install:
+  - pip install -r requirements.txt
+script:
+  - python postcode-centroid.py | grep "5.989.*, 49.508.*postcode.*\"4222\"" > /dev/null
+notifications:
+  email:
+    on_success: never 
+    on_failure: always
