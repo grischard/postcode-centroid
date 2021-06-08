@@ -6,6 +6,10 @@ Return GeoJSON centroids for each postcode in Luxembourg
 
 Run like :
 
+`python3 -m pip install -r requirements.txt`
+
+and then:
+
 `python3 postcode-centroid.py > centroids.geojson`
 
 A sample centroids.geojson.xz (from 2016-07-11) is included.
