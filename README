@@ -4,7 +4,7 @@ Return GeoJSON centroids for each postcode in Luxembourg
 - Average the position of all postcodes
 - Spit out geojson
 
-Run like :
+Run this command to install the requirements:
 
 `python3 -m pip install -r requirements.txt`
 
